@@ -9,4 +9,5 @@ public interface StarWarsApi extends AutoCloseable
     public static final String PEOPLE_URL = "https://swapi.tech/api/people";
 
     public JsonObject request(String url) throws StarWarsApiException;
+    public JsonObject generateCharacter(String url) throws StarWarsApiException;
 }

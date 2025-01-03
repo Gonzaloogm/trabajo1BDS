@@ -36,6 +36,11 @@ public class StarWarsApiImpl implements StarWarsApi
     }
 
     @Override
+    public JsonObject generateCharacter(String url) throws StarWarsApiException {
+        return request(url);
+    }
+
+    @Override
     public void close() throws Exception
     {
         if (httpClient != null)
